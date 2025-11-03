@@ -88,3 +88,48 @@ let sum = 0;
  for (let i = 1; i <= 5; i++) { 
     suma += i; } 
 console.log(sum);
+
+
+
+
+
+//Clasificación de frutas con ciclo de FOR
+const frutas = ['manzana', 'plátano', 'plátano', 'fresa', 'uva', 'plátano', 'manzana', 'uva', 'fresa'];
+
+const conteoFrutas = {};
+
+for (let i = 0; i < frutas.length; i++) {
+    const fruta = frutas[i];
+    if (conteoFrutas[fruta]) {
+        conteoFrutas[fruta]++;
+    }else{
+        conteoFrutas[fruta] = 1;
+    }
+}
+
+console.log("Conteo de frutas con ciclo de FOR:");
+console.log(conteoFrutas);
+
+
+
+// --- Clasificación de frutas con ciclo WHILE ---
+
+const frutas2 = ['mango', 'fresa', 'mango', 'sandía', 'fresa', 'mango'];
+const conteoFrutas2 = {};
+
+let i = 0;
+
+while (i < frutas2.length) {
+  const fruta = frutas2[i];
+
+  if (conteoFrutas2[fruta]) {
+    conteoFrutas2[fruta]++;
+  } else {
+    conteoFrutas2[fruta] = 1;
+  }
+
+  i++;
+}
+
+console.log("Conteo de frutas con WHILE:");
+console.log(conteoFrutas2);
